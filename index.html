@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="mainHeader">
+        <h1>DOM Manipulation Demo</h1>
+        <nav class="nav-bar">
+            <ul id="navList">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="contentSection">
+            <p id="dynamicText">Initial text content</p>
+            <div id="styleBox" class="box">Style me!</div>
+            
+            <div class="button-group">
+                <button onclick="changeText()">Change Text</button>
+                <button onclick="toggleStyle()">Toggle Style</button>
+                <button onclick="addElement()">Add Item</button>
+                <button onclick="removeElement()">Remove Item</button>
+            </div>
+
+            <ul id="itemList"></ul>
+        </section>
+    </main>
+
+    <footer id="mainFooter">
+        <p>&copy; 2023 DOM Demo. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
